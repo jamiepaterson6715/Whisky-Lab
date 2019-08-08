@@ -24,7 +24,7 @@ public class WhiskyController {
 
 
     @GetMapping(value = "/year/{year}")
-    public List<Whisky> getAllWhiskiesForYear(@PathVariable int year) {
+    public List<Whisky> getWhiskiesForYear(@PathVariable int year) {
         return whiskyRepository.findWhiskysByYear(year);
     }
 
